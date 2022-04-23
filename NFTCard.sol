@@ -12,7 +12,7 @@ contract NFTCardContract is ERC1155, Ownable {
     uint256 public constant ARTWORK = 0;  
     uint256 public constant PHOTO  = 1;
 
-    constructor() ERC1155("")//MetaData Link
+    constructor() ERC1155("https://7mo2aen51dyh.usemoralis.com/{id}.json")//MetaData Link
     {
         _mint(msg.sender, ARTWORK, 1, "");
         _mint(msg.sender, PHOTO, 2, "");
